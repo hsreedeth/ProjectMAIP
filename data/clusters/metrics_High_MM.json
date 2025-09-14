@@ -1,0 +1,61 @@
+{
+  "stratum": "High_MM",
+  "bestK_rule": 5,
+  "bestK_stability": 6,
+  "silhouette": 0.115099951876019,
+  "calinski_harabasz": 91.15641988707083,
+  "davies_bouldin": 2.482336508674214,
+  "n": 1100,
+  "pca_components": 12,
+  "grid": [
+    {
+      "K": 2,
+      "stability_ARI": 0.12909407810479134,
+      "silhouette": 0.19757804263883394,
+      "calinski_harabasz": 81.54114537645138,
+      "davies_bouldin": 2.871179017528251
+    },
+    {
+      "K": 3,
+      "stability_ARI": 0.23687896473707448,
+      "silhouette": 0.1731592792414416,
+      "calinski_harabasz": 86.60432905459133,
+      "davies_bouldin": 2.4027288105597173
+    },
+    {
+      "K": 4,
+      "stability_ARI": 0.2215338035857766,
+      "silhouette": 0.032091103156446886,
+      "calinski_harabasz": 75.23195211850734,
+      "davies_bouldin": 2.8961491366921956
+    },
+    {
+      "K": 5,
+      "stability_ARI": 0.20184941499725445,
+      "silhouette": 0.25354377336844053,
+      "calinski_harabasz": 70.833043242238,
+      "davies_bouldin": 2.0754104409260785
+    },
+    {
+      "K": 6,
+      "stability_ARI": 0.2451289601775047,
+      "silhouette": 0.05572921395098213,
+      "calinski_harabasz": 78.92457881834058,
+      "davies_bouldin": 2.474560846080394
+    },
+    {
+      "K": 7,
+      "stability_ARI": 0.22753172650424505,
+      "silhouette": 0.09362607103703822,
+      "calinski_harabasz": 61.78179108644891,
+      "davies_bouldin": 2.7032552225903452
+    },
+    {
+      "K": 8,
+      "stability_ARI": 0.24378085703710045,
+      "silhouette": 0.09436903820414458,
+      "calinski_harabasz": 78.37858643135732,
+      "davies_bouldin": 2.2458891760897144
+    }
+  ]
+}

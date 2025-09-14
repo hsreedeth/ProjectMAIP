@@ -1,0 +1,8 @@
+{
+  "stratum": "High_MM",
+  "K": 6,
+  "silhouette": 0.13753426089071374,
+  "calinski_harabasz": 97.6569106034194,
+  "davies_bouldin": 1.9436933864699544,
+  "n": 1100
+}
