@@ -20,8 +20,8 @@ maip-support-phenotyping/
 │
 ├── src/                   # Source code for the main analysis pipeline
 │   ├── __init__.py
-│   ├── 00_make_views.py       # Script for data cleaning, imputation, and view creation
-│   ├── 10_run_mmsp.py         # Path A: Multimorbidity-Stratified Phenotyping
+│   ├── make_views.py       # Script for data cleaning, imputation, and view creation
+│   ├── run_mmsp.py         # Path A: Multimorbidity-Stratified Phenotyping
 │   ├── 11_run_snf.py          # Path B: Multi-View Fusion
 │   ├── 20_select_clusters.py  # Stability analysis and final phenotype selection
 │   ├── 30_validate_outcomes.py # External validation (KM curves, LOS/cost tests)
@@ -29,14 +29,23 @@ maip-support-phenotyping/
 │   ├── 50_generate_rulecard.py# LLM-based rulecard and flowchart generation
 │   └── utils.py             # Helper functions (e.g., plotting, custom metrics)
 │
-├── models/                # Trained models and related artifacts
-│   ├── final_cluster_model.pkl # The chosen clustering object (e.g., KMedoids)
-│   ├── surrogate_tree.pkl     # The trained decision tree surrogate
-│   └── llama-3-8b-q4.gguf   # The quantized LLM (or a pointer to it)
+├── models/                        # Trained models and related artifacts
+│   ├── final_cluster_model.pkl    # The chosen clustering object (e.g., KMedoids)
+│   ├── surrogate_tree.pkl         # The trained decision tree surrogate
+│   └── llama-3-8b-q4.gguf         # The quantized LLM (or a pointer to it)
 │
 └── reports/               # Final project outputs
-    ├── figures/           # Generated plots, charts, and diagrams
+    ├── figures/  
+    │   ├── qc/
+    │	│   ├── alb_qc_plot.png             
+    │	│   ├── pafi_qc_plot.png               
+    │   │   ├── ph_qc_plot.png
+    │   │   └── resp_qc_plot.png                            
     │   ├── famd_plot.png
     │   ├── kaplan_meier_survival.png
     │   └── phenotype_profiles.png
-    └── article.md         # Draft of your Medium article or project report
+    ├── tables/ 
+    |   ├── cluster_profiles_summary.csv             
+    |   ├── cox_summary.csv              
+    |   └── KM_logrank_summary.csv 
+    └── article.md         # Draft of the project report (prospective)
