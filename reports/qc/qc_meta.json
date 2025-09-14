@@ -1,0 +1,8 @@
+{
+  "input": "/Users/harisreedeth/Desktop/D/personal/ProjectMAIP/data/01_processed/support_preprocessed_clean.csv",
+  "n_rows": 9105,
+  "violation_files": [
+    "/Users/harisreedeth/Desktop/D/personal/ProjectMAIP/reports/qc/violations/totmcst_range_violations.csv"
+  ],
+  "summary_csv": "/Users/harisreedeth/Desktop/D/personal/ProjectMAIP/reports/qc/qc_summary.csv"
+}
