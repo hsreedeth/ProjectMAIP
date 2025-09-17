@@ -2,6 +2,9 @@
 
 The repo is organised for reproducibility: `data/` (raw → processed), `src/` (e.g., `make_views.py`, `run_mmsp.py`, `external_validation.py`, `run_qc.py`), and `reports/` (figures/tables). Quick start: place your cohort in `data/00_raw/`, run preprocessing & QC, execute MMSP, then external validation; seeds and requirements are pinned for consistent results. Real data are not bundled; scripts assume a wide table with `eid`, outcomes (e.g., LOS/cost/survival), and standard physiology/comorbidity fields. Issues and PRs that improve robustness, fairness checks, or clinician-facing rulecards are very welcome.
 
+---
+
+Upcoming update: Redundancy management of processed data across pipelines. Specifically, between scr/scripts and notebooks. Every refernces in the pipeline will be consistent.
 
 
 
